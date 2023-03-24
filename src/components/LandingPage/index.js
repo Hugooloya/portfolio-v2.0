@@ -18,18 +18,18 @@ import {
   STechBox,
   STechIcon,
   STechText,
+  TechDiv,
 } from "./landingPage.style";
 import PPicture from "../../Assets/Profile.jpg";
 import LandingArt from "../../Assets/landingArt.png";
 
-export default function LandingPage({ techs }) {
-  console.log(techs[0].icon);
+export default function LandingPage({ Backend, Frontend }) {
   return (
     <>
       <SIntroContainer>
         <TopContainer>
-          <SIntroH1>Full Stack Developer</SIntroH1>
-          <SIntroH2>I love reusable and simple code</SIntroH2>
+          <SIntroH1>Full Stack Developer.</SIntroH1>
+          <SIntroH2>I love reusable and simple code.</SIntroH2>
           <SPictureContainer src={PPicture} />
         </TopContainer>
         <BotContainer>
@@ -51,15 +51,25 @@ export default function LandingPage({ techs }) {
         <SkillsTable>
           <SkillDivL>
             <TechTitle>Back End</TechTitle>
-            {techs.map((tech) => (
-              <STechBox key={tech.key}>
-                <STechIcon src={tech.icon} />
-                <STechText>{tech.technology}</STechText>
-              </STechBox>
-            ))}
+            <TechDiv>
+              {Backend.map((backEnd) => (
+                <STechBox key={backEnd.key}>
+                  <STechIcon src={backEnd.icon} />
+                  <STechText>{backEnd.technology}</STechText>
+                </STechBox>
+              ))}
+            </TechDiv>
           </SkillDivL>
           <SkillDivR>
             <TechTitle>Front End</TechTitle>
+            <TechDiv>
+              {Frontend.map((frontEnd) => (
+                <STechBox key={frontEnd.key}>
+                  <STechIcon src={frontEnd.icon} />
+                  <STechText>{frontEnd.technology}</STechText>
+                </STechBox>
+              ))}
+            </TechDiv>
           </SkillDivR>
         </SkillsTable>
       </SkillsContainer>

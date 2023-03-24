@@ -3,8 +3,9 @@ import Node from "./Assets/Node.png";
 import Mongo from "./Assets/Mongo.png";
 import Express from "./Assets/Express.png";
 import MySQL from "./Assets/Mysql.png";
+import JavaScriptIcon from "./Assets/Javascript.png";
 
-const techs = [
+const Btechs = [
   {
     icon: Mongo,
     technology: "MongoDB",
@@ -30,6 +31,11 @@ const techs = [
     technology: "MySQL",
     key: "05",
   },
+  {
+    icon: JavaScriptIcon,
+    technology: "JavaScript",
+    key: "06",
+  },
 ];
 
-export default techs;
+export default Btechs;

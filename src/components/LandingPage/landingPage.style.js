@@ -80,7 +80,7 @@ export const SkillsContainer = styled.div`
   font-family: "Roboto", sans-serif;
   background-color: #f5f5f5;
   width: 100%;
-  height: 600px;
+  /* height: 600px; */
   display: flex;
   justify-content: center;
 `;
@@ -98,21 +98,30 @@ export const SkillsTable = styled.div`
 export const SkillDivL = styled.div`
   border-right: 1px solid #324936;
   width: 50%;
-  height: 100%;
+  /* height: 100%; */
 `;
 
 export const TechTitle = styled.h1`
   color: #324936;
   text-align: center;
-  margin: 50px 0px;
+  margin: 50px 0px 70px 0px;
+  font-size: 45px;
+`;
+
+export const TechDiv = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const STechBox = styled.div`
   width: 90%;
   height: 50px;
-  margin: 20px 80px;
+  margin-bottom: 40px;
   display: flex;
   align-items: center;
+  justify-content: center;
 `;
 
 export const STechIcon = styled.img`
@@ -122,10 +131,11 @@ export const STechIcon = styled.img`
 
 export const STechText = styled.h3`
   color: #324936;
+  font-weight: 400;
 `;
 
 export const SkillDivR = styled.div`
   /* border-right: 1px solid #324936; */
   width: 50%;
-  height: 100%;
+  /* height: 100%; */
 `;

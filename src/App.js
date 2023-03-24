@@ -3,7 +3,8 @@ import LandingPage from "./components/LandingPage/index";
 import Navbar from "./components/Navbar";
 // import Contact from "./components/Contact";
 import GlobalStyle from "./Global.style";
-import techs from "./Techs";
+import Backend from "./Backend";
+import Frontend from "./Frontend";
 
 export default function App() {
   return (
@@ -11,7 +12,10 @@ export default function App() {
       <GlobalStyle />
       <Navbar />
       <Routes>
-        <Route path="/" element={<LandingPage techs={techs} />} />
+        <Route
+          path="/"
+          element={<LandingPage Backend={Backend} Frontend={Frontend} />}
+        />
         {/* <Route path="/contact" element={<Contact />} /> */}
       </Routes>
     </>
