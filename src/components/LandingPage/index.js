@@ -19,11 +19,28 @@ import {
   STechIcon,
   STechText,
   TechDiv,
+  WorkContainer,
+  ProjectDiv01,
+  SH2,
+  SH3,
+  HContainer,
+  SProjectImg01,
+  SProjectImg02,
+  MockContainer,
+  SH1,
+  SH4,
 } from "./landingPage.style";
 import PPicture from "../../Assets/Profile.jpg";
 import LandingArt from "../../Assets/landingArt.png";
+import iPhoneIMG from "../../Assets/iPhone.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function LandingPage({ Backend, Frontend }) {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <>
       <SIntroContainer>
@@ -73,6 +90,22 @@ export default function LandingPage({ Backend, Frontend }) {
           </SkillDivR>
         </SkillsTable>
       </SkillsContainer>
+      <WorkContainer>
+        <SH1>My Recent Work</SH1>
+        <ProjectDiv01>
+          <HContainer>
+            <SH2>Dinner Picker</SH2>
+            <SH3>Front End technologies used:</SH3>
+            <SH4>React & styled-somponents.</SH4>
+          </HContainer>
+          <MockContainer>
+            <a href="https://dinnerpicker.online/">
+              <SProjectImg01 src={iPhoneIMG} data-aos="fade-left" />
+            </a>
+          </MockContainer>
+          {/* <SProjectImg02 src={iPhoneIMG} /> */}
+        </ProjectDiv01>
+      </WorkContainer>
     </>
   );
 }

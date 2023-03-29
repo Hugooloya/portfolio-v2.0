@@ -74,13 +74,13 @@ export const SDescText = styled.p`
   font-size: 20px;
   font-weight: 300;
   margin-top: 25px;
+  font-family: "Roboto", sans-serif;
 `;
 
 export const SkillsContainer = styled.div`
   font-family: "Roboto", sans-serif;
   background-color: #f5f5f5;
   width: 100%;
-  /* height: 600px; */
   display: flex;
   justify-content: center;
 `;
@@ -98,10 +98,10 @@ export const SkillsTable = styled.div`
 export const SkillDivL = styled.div`
   border-right: 1px solid #324936;
   width: 50%;
-  /* height: 100%; */
 `;
 
 export const TechTitle = styled.h1`
+  font-family: "Roboto", sans-serif;
   color: #324936;
   text-align: center;
   margin: 50px 0px 70px 0px;
@@ -135,7 +135,64 @@ export const STechText = styled.h3`
 `;
 
 export const SkillDivR = styled.div`
-  /* border-right: 1px solid #324936; */
   width: 50%;
-  /* height: 100%; */
+`;
+
+export const WorkContainer = styled.div`
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5;
+  font-family: "Roboto", sans-serif;
+  color: #324936;
+`;
+
+export const ProjectDiv01 = styled.div`
+  width: 50%;
+  margin-top: 150px;
+  display: flex;
+`;
+
+export const HContainer = styled.div`
+  width: 50%;
+  margin-top: 200px;
+`;
+
+export const SH1 = styled.h1`
+  font-size: 45px;
+  font-weight: 600;
+`;
+
+export const SH2 = styled.h2`
+  font-size: 35px;
+  font-weight: 600;
+`;
+
+export const SH3 = styled.h3`
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: 50px;
+`;
+
+export const SH4 = styled.h4`
+  font-size: 25px;
+  font-weight: 300;
+  margin-top: 10px;
+`;
+
+export const MockContainer = styled.div`
+  width: 50%;
+  text-align: end;
+`;
+
+export const SProjectImg01 = styled.img`
+  width: 70%;
+`;
+
+export const SProjectImg02 = styled.img`
+  width: 10%;
+  /* position: relative; */
+  /* left: 400px; */
 `;
