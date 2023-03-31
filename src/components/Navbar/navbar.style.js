@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const NavbarContainer = styled.div`
   width: 100% auto;
@@ -22,6 +23,7 @@ export const SButton = styled.button`
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 18px;
+  /* background-color: #324936; */
   color: #324936;
   cursor: pointer;
 
@@ -30,4 +32,8 @@ export const SButton = styled.button`
     background-color: #324936;
     color: #f5f5f5;
   }
+`;
+
+export const SLink = styled(Link)`
+  text-decoration: none;
 `;

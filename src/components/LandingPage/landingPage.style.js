@@ -188,11 +188,11 @@ export const MockContainer = styled.div`
 `;
 
 export const SProjectImg01 = styled.img`
-  width: 70%;
+  width: 150%;
 `;
 
 export const SProjectImg02 = styled.img`
-  width: 10%;
+  width: 2000%;
   /* position: relative; */
   /* left: 400px; */
 `;

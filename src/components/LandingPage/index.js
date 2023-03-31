@@ -93,7 +93,7 @@ export default function LandingPage({ Backend, Frontend }) {
       <WorkContainer>
         <SH1>My Recent Work</SH1>
         <ProjectDiv01>
-          <HContainer>
+          <HContainer data-aos="fade-right">
             <SH2>Dinner Picker</SH2>
             <SH3>Front End technologies used:</SH3>
             <SH4>React & styled-somponents.</SH4>

@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import LandingPage from "./components/LandingPage/index";
 import Navbar from "./components/Navbar";
-// import Contact from "./components/Contact";
+import Contact from "./components/Contact";
 import GlobalStyle from "./Global.style";
 import Backend from "./Backend";
 import Frontend from "./Frontend";
@@ -16,7 +16,7 @@ export default function App() {
           path="/"
           element={<LandingPage Backend={Backend} Frontend={Frontend} />}
         />
-        {/* <Route path="/contact" element={<Contact />} /> */}
+        <Route path="/Contact" element={<Contact />} />
       </Routes>
     </>
   );
