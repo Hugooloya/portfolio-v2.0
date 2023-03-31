@@ -96,7 +96,7 @@ export default function LandingPage({ Backend, Frontend }) {
           <HContainer data-aos="fade-right">
             <SH2>Dinner Picker</SH2>
             <SH3>Front End technologies used:</SH3>
-            <SH4>React & styled-somponents.</SH4>
+            <SH4>React & styled-components.</SH4>
           </HContainer>
           <MockContainer>
             <a href="https://dinnerpicker.online/">
