@@ -86,7 +86,8 @@ export const SButton = styled.button`
   color: #324936;
   cursor: pointer;
   margin-top: 35px;
-  outline: none;
+  border: none;
+  background-color: #f5f5f5;
 
   &:hover {
     background-color: #324936;
