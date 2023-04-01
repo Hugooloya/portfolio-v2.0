@@ -25,7 +25,7 @@ import {
   SH3,
   HContainer,
   SProjectImg01,
-  SProjectImg02,
+  // SProjectImg02,
   MockContainer,
   SH1,
   SH4,

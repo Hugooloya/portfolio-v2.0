@@ -1,43 +1,62 @@
 import styled from "styled-components";
 
+// <-----------INTRODUCTION SECTION----------->
+
 export const SIntroContainer = styled.div`
   background-color: #f5f5f5;
   width: 100%;
-  height: 90vh;
 `;
 
 export const TopContainer = styled.div`
   width: 100%;
   height: 600px;
-  font-family: "Roboto", sans-serif;
+  color: #324936;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #324936;
+
+  @media screen and (max-width: 576px) {
+    height: 450px;
+  }
 `;
 
 export const SIntroH1 = styled.h1`
   font-size: 50px;
   font-weight: 500;
   margin-top: 80px;
+
+  @media screen and (max-width: 576px) {
+    font-size: 35px;
+    margin-top: 60px;
+  }
 `;
 
 export const SIntroH2 = styled.h2`
   font-size: 25px;
   font-weight: 300;
   margin-top: 30px;
+
+  @media screen and (max-width: 576px) {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 15px;
+  }
 `;
 
 export const SPictureContainer = styled.img`
   margin-top: 90px;
   border-radius: 50%;
   width: 10%;
+
+  @media screen and (max-width: 576px) {
+    margin-top: 40px;
+    border-radius: 50%;
+    width: 40%;
+  }
 `;
 
 export const BotContainer = styled.div`
   width: 100%;
-  height: 600px;
-  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,10 +65,15 @@ export const BotContainer = styled.div`
 
 export const SArtContainer = styled.img`
   width: 35%;
+
+  @media screen and (max-width: 576px) {
+    width: 80%;
+  }
 `;
 
+// <--------------------------BIO SECTION----------->
+
 export const BioContainer = styled.div`
-  font-family: "Roboto", sans-serif;
   color: #f5f5f5;
   width: 100%;
   height: 600px;
@@ -57,16 +81,31 @@ export const BioContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 576px) {
+    /* height: auto; */
+  }
 `;
 
 export const SBioDiv = styled.div`
   margin-bottom: 200px;
   width: 50%;
+
+  @media screen and (max-width: 576px) {
+    /* margin-bottom: 200px; */
+    width: 90%;
+  }
 `;
 
 export const SDescTitle = styled.h1`
+  font-size: 50px;
+  font-weight: 500;
   text-align: center;
-  font-size: 40px;
+
+  @media screen and (max-width: 576px) {
+    font-size: 35px;
+    font-weight: 500;
+  }
 `;
 
 export const SDescText = styled.p`
@@ -74,15 +113,23 @@ export const SDescText = styled.p`
   font-size: 20px;
   font-weight: 300;
   margin-top: 25px;
-  font-family: "Roboto", sans-serif;
+
+  @media screen and (max-width: 576px) {
+    font-size: 17px;
+    font-weight: 300;
+    margin-top: 35px;
+  }
 `;
 
+// <-----------SKILLS SECTION----------->
+
 export const SkillsContainer = styled.div`
-  font-family: "Roboto", sans-serif;
-  background-color: #f5f5f5;
   width: 100%;
   display: flex;
   justify-content: center;
+
+  @media screen and (max-width: 576px) {
+  }
 `;
 
 export const SkillsTable = styled.div`
@@ -93,15 +140,26 @@ export const SkillsTable = styled.div`
   bottom: 200px;
   box-shadow: 0 5px 20px -19px;
   display: flex;
+
+  @media screen and (max-width: 576px) {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const SkillDivL = styled.div`
   border-right: 1px solid #324936;
   width: 50%;
+
+  @media screen and (max-width: 576px) {
+    border-right: none;
+    border-bottom: 1px solid #324936;
+    width: 100%;
+  }
 `;
 
 export const TechTitle = styled.h1`
-  font-family: "Roboto", sans-serif;
   color: #324936;
   text-align: center;
   margin: 50px 0px 70px 0px;
@@ -122,6 +180,11 @@ export const STechBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 576px) {
+    height: auto;
+    margin-bottom: 30px;
+  }
 `;
 
 export const STechIcon = styled.img`
@@ -136,63 +199,104 @@ export const STechText = styled.h3`
 
 export const SkillDivR = styled.div`
   width: 50%;
+
+  @media screen and (max-width: 576px) {
+    width: 100%;
+  }
 `;
+
+// <--------------------------BIO SECTION----------->
 
 export const WorkContainer = styled.div`
   width: 100%;
-  height: 1000px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f5f5f5;
-  font-family: "Roboto", sans-serif;
   color: #324936;
+
+  @media screen and (max-width: 576px) {
+  }
+`;
+
+export const SH1 = styled.h1`
+  font-size: 45px;
+  font-weight: 600;
+
+  @media screen and (max-width: 576px) {
+    position: relative;
+    bottom: 120px;
+  }
 `;
 
 export const ProjectDiv01 = styled.div`
   width: 50%;
   margin-top: 150px;
   display: flex;
+
+  @media screen and (max-width: 576px) {
+    width: 90%;
+    margin-top: -10px;
+    flex-direction: column;
+  }
 `;
 
 export const HContainer = styled.div`
   width: 50%;
   margin-top: 200px;
-`;
 
-export const SH1 = styled.h1`
-  font-size: 45px;
-  font-weight: 600;
+  @media screen and (max-width: 576px) {
+    width: 100%;
+    margin-top: 0px;
+  }
 `;
 
 export const SH2 = styled.h2`
   font-size: 35px;
   font-weight: 600;
+  @media screen and (max-width: 576px) {
+    font-size: 40px;
+  }
 `;
 
 export const SH3 = styled.h3`
   font-size: 30px;
   font-weight: 400;
   margin-top: 50px;
+
+  @media screen and (max-width: 576px) {
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 10px;
+  }
 `;
 
 export const SH4 = styled.h4`
   font-size: 25px;
   font-weight: 300;
   margin-top: 10px;
+
+  @media screen and (max-width: 576px) {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 5px;
+  }
 `;
 
 export const MockContainer = styled.div`
   width: 50%;
   text-align: end;
+
+  @media screen and (max-width: 576px) {
+    width: 100%;
+    text-align: end;
+    margin-top: 50px;
+  }
 `;
 
 export const SProjectImg01 = styled.img`
-  width: 150%;
-`;
+  width: 160%;
 
-export const SProjectImg02 = styled.img`
-  width: 2000%;
-  /* position: relative; */
-  /* left: 400px; */
+  @media screen and (max-width: 576px) {
+    width: 100%;
+  }
 `;
