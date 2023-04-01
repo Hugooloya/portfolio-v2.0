@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import LandingPage from "./components/LandingPage";
+import LandingPage from "./components/LandingPage/index";
 import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
 import GlobalStyle from "./Global.style";
