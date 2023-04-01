@@ -13,7 +13,7 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route
-          path="/"
+          path="/LandingPage"
           element={<LandingPage Backend={Backend} Frontend={Frontend} />}
         />
         <Route path="/Contact" element={<Contact />} />
