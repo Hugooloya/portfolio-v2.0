@@ -81,7 +81,6 @@ export const SButton = styled.button`
   width: 150px;
   height: 50px;
   border-radius: 30px;
-  border: 2px solid #324936;
   font-weight: 700;
   font-size: 18px;
   color: #324936;
